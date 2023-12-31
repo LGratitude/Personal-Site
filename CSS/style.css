@@ -1,0 +1,134 @@
+/************************* TAG SELECTORS ******************************/
+
+/************************* CLASS TAGS ********************************/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar-toggler {
+    border: 0;
+}
+
+@media (max-width: 575.98px) {
+
+    /* Style for the glass effect on nav links */
+    .navbar-nav a.nav-link {
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Set the background color with transparency */
+        backdrop-filter: blur(8px);
+        /* Add a blur effect */
+        border-radius: 5px;
+        /* Optional: Add border-radius for a rounded look */
+    }
+
+    /* Additional styles to enhance visibility when the link is hovered */
+    .navbar-nav a.nav-link {
+        background-color: rgba(255, 255, 255, 0.7);
+        /* Adjust the transparency on hover */
+    }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+}
+
+.middle-bar {
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.navbar-nav a.nav-link {
+    color: #DAFDFF;
+    /* Change this to your desired text color */
+}
+
+/* .navbar-toggler.collapsed .toggler-icon{
+    background-color: #777;
+} */
+
+.lh-logo {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 0 0.1rem skyblue
+}
+
+/* Hero Section */
+.autoType {
+    color: #DAFDFF;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    /* Set the height of the hero section to the viewport height */
+    background: url('../Images/security.jpg') center/cover;
+    /* Replace 'path/to/your-image.jpg' with the actual path to your background image */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the intensity by changing the alpha value */
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.name_surname {
+    color: #A5DEF1;
+}
+
+
+
+/************************* ID TAGS ***********************************/
