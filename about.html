@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
-
+    <!-- Bootstrap Icon Font Style -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Style-CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 
-    <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- 3D Map -->
-    <link
-    href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
-    rel="stylesheet"/>
-
-    
-    <title>Lehlohonolo Hlatshwayo Personal Site</title>
+    <title>Document</title>
 </head>
-
 
 <body>
 
@@ -84,29 +76,150 @@
             </div>
     </nav>
 
-    <!-- Hero Section  -->
-    <Section class="hero-section d-flex align-items-center justify-content-center text-center" data-bs-theme="dark">
-        <div class="hero-overlay"></div>
-        <div class="container hero-text">
-            <h6 class="text-white  pb-5 mb-3">MY LIFE RUNS ON CODE, WELCOME TO MY WORLD!</h6>
-            <h1 class="text-white">Hi, I am <span class="name_surname">Lehlohonolo Hlatshwayo</span></h1>
-            <h1 class="text-white">Aspiring <span class="autoType"></span></h1>
-            <a href="#Country" class="arrow-down" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#FFFFFF" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-              </svg></a>
+    <!-- Title  -->
+    <Section class="about-section d-flex align-items-center justify-content-center text-center" data-bs-theme="dark">
+        <div class="about-overlay"></div>
+    </Section>
+
+    <!--Hero -->
+    <section id="top">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img class="hloni-img" src="./Images/Hloni.jpg" class="d-block mx-lg-auto img-fluid"
+                        alt="profile picture" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class=" fw-bold text-body-emphasis lh-1 mb-3">Hello World! I am Lehlohonolo.</h1>
+                    <p class="lead">An Aspiring Full Stack Web Developer, Python Enthusiast, Java Explorer, and Ethical
+                        Hacking Enthusiast!I am a developer based in Johannesburg, South Africa.</p>
+                    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Section id="middle">
+        <div class="container">
+            <hr class="mx-auto">
+            <div class="yes">
+                <h1 class="text-center">Development!</h1>
+                <p class="text-center lead">Passionate about crafting innovative solutions and diving deep into the
+                    world of
+                    code, <br> I'm on an exciting journey to master multiple domains within the vast realm of
+                    technology.
+                </p>
+                <!-- Full Stack Web Development -->
+                <div class="col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg align-items-center g-5 py-5">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img class="dev-img" src="./Images/web-dev.jpg" class="d-block mx-lg-auto img-fluid"
+                                alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class=" fw-bold text-body-emphasis lh-1 mb-3">Full Stack Web Development:</h1>
+                            <p class="lead">I'm captivated by the art of creating seamless and interactive web
+                                experiences.
+                                From front-end magic with HTML, CSS, and JavaScript to back-end sorcery with Node.js,
+                                Express, and databases, I'm on a mission to bring ideas to life on the web.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Python Development -->
+            <div class="col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img class="dev-img" src="./Images/python-logo.jpg" class="d-block mx-lg-auto img-fluid"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class=" fw-bold text-body-emphasis lh-1 mb-3">Python Development:</h1>
+                        <p class="lead">Python is my coding playground! From scripting to building robust applications,
+                            I'm delving into the versatility of Python. Whether it's web development using Django or
+                            automation with Flask, I'm eager to leverage Python's power.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Java Development -->
+            <div class="yes">
+                <div class="col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg align-items-center g-5 py-5">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img class="dev-img" src="./Images/java.jpg" class="d-block mx-lg-auto img-fluid"
+                                alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class=" fw-bold text-body-emphasis lh-1 mb-3">Java Development:</h1>
+                            <p class="lead">Embracing the "Write Once, Run Anywhere" mantra of Java, I'm navigating the
+                                world of
+                                Java development. Building scalable applications and exploring the Java ecosystem fuels
+                                my
+                                curiosity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ethical Hacking -->
+            <div class="col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img class="dev-img" src="./Images/hacking.jpg" class="d-block mx-lg-auto img-fluid"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class=" fw-bold text-body-emphasis lh-1 mb-3">Ethical Hacking:</h1>
+                        <p class="lead">Ethical hacking is not just a skill; it's a mindset. With a strong commitment to
+                            ethical practices, I'm immersing myself in the world of cybersecurity. Securing systems,
+                            conducting penetration testing, and staying one step ahead of potential threats are my
+                            ethical
+                            hacking pursuits</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </Section>
 
-    <!-- My Country of orign -->
-    <Section id="Country">
-        <h3 class="text-center pt-5">My country of orign</h3>
-        <!-- Map container -->
-        <div id="map"></div>
+    <section id="bottom">
+        <div class="container">
+            <hr class="mx-auto">
+            <div class="container my-2">
+                <div class="p-2 text-center bg-body-tertiary rounded-3">
+                    <img class="contact-us" src="./Images/contact-us.jpg" width="700" height="500" alt="contact us">
+                    <h1 class="text-body-emphasis">Get in touch</h1>
+                    <p class="col-lg-8 mx-auto fs-5 text-muted lead">
+                        While I may be a newcomer, my insatiable appetite for learning, dedication, and
+                        problem-solving
+                        mindset set the stage for my journey into the tech industry. I'm actively seeking opportunities,
+                        projects,
+                        and collaborations to gain hands-on experience and contribute to the ever-evolving landscape of
+                        technology.
+                    </p>
+                    <div class="d-inline-flex gap-2 mb-5">
+                        <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
+                            type="button">
+                            Call to action
+                            <svg class="bi ms-2" width="24" height="24">
+                                <use xlink:href="#arrow-right-short"></use>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+                            Secondary link
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-    </Section>
+            <p class="lead">🌟 Let's connect, collaborate, and embark on this exciting journey together! The best is yet
+                to come.</p>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24">
@@ -129,18 +242,12 @@
         </ul>
     </footer>
 
-
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- Linking js founder and files -->
     <script src="./JS/script.js"></script>
-    <!-- Typed JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- For the 3D Map -->
-    <script src="https://threejs.org/build/three.js"></script>
-    
 
 </body>
 

@@ -1,6 +1,22 @@
 /************************* TAG SELECTORS ******************************/
+/* for the map */
+body{
+    margin: 0;
+}
+/* for the map */
+#map { 
+    height: 100vh;
+ }
+hr{
+    height: 30px;
+    width: 30%;
+    box-shadow: #ffffff;
+    border-top: 1mm dashed rgb(255, 255, 255);
+}
 
 /************************* CLASS TAGS ********************************/
+
+/************************* index.html section ***************************/
 body {
     margin: 0;
     padding: 0;
@@ -95,6 +111,9 @@ body {
 }
 
 /* Hero Section */
+.arrow-down{
+    margin-top: 20px;
+}
 .autoType {
     color: #DAFDFF;
 }
@@ -129,6 +148,64 @@ body {
     color: #A5DEF1;
 }
 
+.navbar.scrolled {
+    background-color: #0b0b0b;
+    /* Change this to your desired color */
+}
 
+/********************** About.html section *******************************************/
+@media (max-width: 575.98px) {}
+
+.about-section {
+    position: relative;
+    height: 30vh;
+    /* Set the height of the hero section to the viewport height */
+    background: url('../Images/yellow-sky.jpg') center/cover;
+    /* Replace 'path/to/your-image.jpg' with the actual path to your background image */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-us{
+    border-radius: 100%;
+    width: 60%;
+    height: 20%; 
+}
+
+.hloni-img {
+    border-radius: 100%;
+    width: 60%;
+    height: 20%;
+}
+
+.dev-img {
+    border-radius: 12px;
+    width: 90%;
+    height: 90%;
+}
+
+.container .yes {
+    /* height: 100vh;
+    width: 100%; */
+    padding: 0.20px;
+    background: rgb(255, 255, 255, 0.1);
+    z-index: 10;
+    /* display: flex; */
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.25);
+}
 
 /************************* ID TAGS ***********************************/

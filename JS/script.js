@@ -1,3 +1,16 @@
+//Changing the color of the Navbar when you scroll down
+document.addEventListener("DOMContentLoaded", function () {
+    var navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 10) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  });
+
 // Creating auto typed word using typed JS
 document.addEventListener('DOMContentLoaded', function () {
     var options = {
@@ -29,20 +42,19 @@ function openWhatsApp() {
 // Creating a Map
 
 // Initialize the map
-var map = L.map('map').setView([-30.0444, 31.2357], 5); // Coordinates for Johannesburg 
+mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN'; // Replace with your Mapbox access token
 
-// Set the maximum zoom level
-map.setMaxZoom(18);
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11', // You can choose a different map style
+      center: [28.0473, -26.2041], // Johannesburg coordinates
+      zoom: 10,
+    });
 
-// Add a base layer (you can use different tile providers)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap contributors'
-}).addTo(map);
+    // Add controls, layers, and other customizations as needed
+    map.addControl(new mapboxgl.NavigationControl());
 
-// Add a marker for Johannesburg
-var marker = L.marker([-30.0444, 31.2357]).addTo(map);
-marker.bindPopup('Johannesburg, South Africa').openPopup();
-
-
-
-
+    // Example: Add a marker at Johannesburg
+    var marker = new mapboxgl.Marker()
+      .setLngLat([28.0473, -26.2041])
+      .addTo(map);
