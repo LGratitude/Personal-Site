@@ -1,7 +1,12 @@
 /************************* TAG SELECTORS ******************************/
 /* for the map */
+*{
+    padding: 0;
+}
 body{
     margin: 0;
+    font-family: rMerriweather-Sans;
+    
 }
 /* for the map */
 #map { 
@@ -13,6 +18,14 @@ hr{
     box-shadow: #ffffff;
     border-top: 1mm dashed rgb(255, 255, 255);
 }
+/* Pointing the World Map */
+svg path {
+    cursor: pointer;
+}
+svg path:hover{
+    fill: cadetblue;
+}
+
 
 /************************* CLASS TAGS ********************************/
 
@@ -110,9 +123,18 @@ body {
     box-shadow: 0 0 0 0.1rem skyblue
 }
 
-/* Hero Section */
+/**&*&*&*&*&*&*&* Hero Section *&*&*&*&*&*&**&*&*&*&*&/
+
+/* Arrow down icon, must take you one level below when clicked and fades away when the user scrolls down*/
 .arrow-down{
-    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    transition: opacity 0.5s ease;
+  }
+.arrow-down.scrolled{
+    opacity: 0;
 }
 .autoType {
     color: #DAFDFF;
@@ -208,4 +230,20 @@ body {
     box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.25);
 }
 
+.world{
+    color: black;
+}
+
 /************************* ID TAGS ***********************************/
+
+
+/*~~~~~~~~~~~~~~~~~~~ World Map ~~~~~~~~~~~~~~~~~~~~~~*/
+#countries{
+    background-color: rgb(50, 50, 68);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#ZA{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}

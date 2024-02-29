@@ -27,6 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed('.autoType', options);
 });
 
+//Making the arrow icon to fade to when scrolling down
+window.addEventListener('scroll',function(){
+  var arrowIcon = document.querySelector('.arrow-down');
+  if(this.window.scrollY > 0){
+    arrowIcon.classList.add('scrolled');
+  }
+  else{
+    arrowIcon.classList.remove('scrolled');
+  }
+});
+
 // Creating a WhatsApp link
 function openWhatsApp() {
     // type your actual phone number
@@ -39,22 +50,23 @@ function openWhatsApp() {
     window.open(whatsappLink, '_blank')};
 
 // ****************************************************
-// Creating a Map
 
 // Initialize the map
-mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN'; // Replace with your Mapbox access token
-
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11', // You can choose a different map style
-      center: [28.0473, -26.2041], // Johannesburg coordinates
-      zoom: 10,
-    });
-
-    // Add controls, layers, and other customizations as needed
-    map.addControl(new mapboxgl.NavigationControl());
-
-    // Example: Add a marker at Johannesburg
-    var marker = new mapboxgl.Marker()
-      .setLngLat([28.0473, -26.2041])
-      .addTo(map);
+document.querySelectorAll(".allPaths").forEach(e=>{
+  e.addEventListener("mouseOver", function(){
+    window.onmousemove = function(j){
+      x = j.clientX
+      y = j.clientY
+      document.getElementById("countryNames").style.top = y -20+"px"
+      document.getElementById("countryNames").style.left =x -20+"px"
+    }
+    
+    e.style.fill = "yellowgreen"
+    document.getElementById("nameC").innerText = e.id
+    document.getElementById("countryNames").style.opacity = 1
+  })
+  e.addEventListener("mouseleave", function(){
+    e.style.fill = "#ececec"
+    document.getElementById("countryNames").style.opacity = 0
+  })
+})
